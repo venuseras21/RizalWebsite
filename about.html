@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<nav>
+		<ul id="navi">
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="biography.html#rizalFastFacts">RIZAL</a>
+				<div class="submenu">
+					<ul>
+						
+						<li><a href="biography.html#rizalBio">Biography</a>
+						</li>
+						<li><a href="biography.html#rizalFam">Family</a>
+						</li>
+						<li><a href="biography.html#rizaledu">Education</a>
+						</li>
+						<li><a href="biography.html#rizalchar">Different Characters</a>
+						</li>
+						<li><a href="biography.html#lovers">Love Life</a>
+						</li>
+
+					</ul>
+				</div>
+</li>
+			<li><a href="history.html#historyhome">HISTORY</a>
+<div class="submenu">
+					<ul>
+						<li><a href="history.html#katipunan">The Katipunan</a>
+						</li>
+						<li><a href="history.html#propaganda">The Propaganda</a>
+						</li>
+						<li><a href="history.html#inDapitan">Life in Dapitan</a>
+						</li>
+						<li><a href="history.html#afterDapitan">Life After Dapitan</a>
+						</li>
+						<li><a href="history.html#lastHours">His Last Hours</a>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="funfacts.html">MISCELLANEOUS</a>
+<div class="submenu">
+					<ul>
+						<li><a href="funfacts.html#works">Works</a>
+						</li>
+						<li><a href="funfacts.html#funfacts">Fun Facts</a>
+						</li>
+						<li><a href="funfacts.html#legacy">Legacy</a>
+						</li>
+						<li><a href="funfacts.html#documentary">Documentary</a>
+						</li>
+						</li>
+					</ul>
+				</div></a></li>
+			<li class="active"><a href="about.html">ABOUT US</a></li>
+		</ul>
+	</nav>
+
+<img class="aboutleft" src="images/monument.png"></img>
+
+<span class="abouttitle">ABOUT THE WEBSITE</span>
+<div class="aboutmain">
+	<div class="information">
+		<div class="aboutoverlay"></div>
+		<div id="circle">
+
+		<div class="cirDet cirDet1">
+			<div>
+				<h1>MISSION</h1>
+				<h3>To create a website where people can learn about the life of our national hero: Jose Rizal.</h3>
+			</div>
+		</div>
+		<div class="cirDet cirDet2">
+			<div>
+				<h1>CONTACT DETAILS:</h1>
+				<h3>number:099999999999<br>
+		email:venuseras21@gmail.com</h3>
+			</div>
+		</div>
+		<div class="cirDet cirDet3">
+			<div>
+				<h1>DEVELOPERS</h1>
+				<h3>MINDWRAP ERROR GROUP <br>
+	BSIT 3-3</h3>
+			</div>
+		</div>
+		<div class="cirDet cirDet4">
+			<div>
+				<h1> SUBMITTED BY</h1>
+				<h3>Eras, Venus Marie D. <br>
+					Pinto, Ginalyn <br>
+					Villaflores, Laica <br>
+					Bilan, John Kendrick <br>
+				Balanay, Jennifer <br>
+			Bazar, Al Justine <br>
+		Maramot, Rosemarie</h3>
+			</div>
+		</div>
+
+	</div>
+
+
+	</div>
+	<div class="aboutcontrol">
+		<button id="aboutbtnUp">&#8593;</button>
+		<h3>Details</h3>
+		<button id="aboutbtnDown">&#8595;</button>
+	</div>
+</div>
+<script type="text/javascript">
+	var circle = document.getElementById("circle");
+	var aboutbtnUp = document.getElementById("aboutbtnUp");	
+	var aboutbtnDown = document.getElementById("aboutbtnDown");
+
+	var rotateValue = circle.style.transform;
+	var rotateSum;
+	aboutbtnUp.onclick = function(){
+		rotateSum = rotateValue + "rotate(-90deg)";
+		circle.style.transform = rotateSum;
+		rotateValue=rotateSum;
+	}
+	aboutbtnDown.onclick = function(){
+		rotateSum = rotateValue + "rotate(90deg)";
+		circle.style.transform = rotateSum;
+		rotateValue=rotateSum;
+	}
+</script>
+</body>
+</html>
